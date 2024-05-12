@@ -219,11 +219,34 @@
         </ul>
     </div>
     </footer>
+
+    <!--modal section-->
 <div data-modal class="is-hidden">
     <div data-modal-content>
-        <h2>titlu</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nobis facere dolorum, laborum laudantium architecto. Reiciendis, voluptatum? Voluptatibus deserunt sed ad iste libero provident commodi quasi possimus, esse necessitatibus numquam.</p>
         <button data-modal-close type="button">X</button>
+        <h2 class="modal_title">Leave your information and we'll call you back</h2>
+       <!--modal form-->
+            <form name="modal-form" class="modal-form">
+                    <label class="modal-form_position">Name
+                        <input  type="text" name="username" placeholder="insert name" class="modal-form_input">
+                    </label>
+                    <label class="modal-form_position">Telephone
+                        <input type="tel" name="userphone" placeholder="insert phone" class="modal-form_input">
+                    </label>
+                    <label class="modal-form_position">E-mail
+                        <input type="e-mail" name="useremail" placeholder="insert e-mail" class="modal-form_input">
+                    </label>
+                    <label class="modal-form_position">Mesaj
+                        <textarea name="mesaj" placeholder="insert your message" class="modal-form_coments" rows="5"></textarea>
+                    </label>
+                    <label class="modal-form_position modal-form_check form-check">
+                        <input type="checkbox" name="agreement" value="agreement" class="modal-form_input">
+                        I agree with the letter and accept the <a href="#" class="condition"> Terms and Conditions</a>
+                    </label>
+
+                    <button type="submit" class="modal-form_btn">Send</button>
+            </form>
+
     </div>
 </div>
 <script src="./modal.js"></script>
