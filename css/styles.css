@@ -801,8 +801,8 @@ body{
     color: var(--gray-color);  
     position: relative; 
 }
-.modal-form_position:focus + svg,
-.modal-form_position:hover + svg{
+.modal-form_position:focus ,
+.modal-form_position:hover{
     fill: var(--aqua-color);
     stroke: var(--aqua-color);
 }
@@ -878,10 +878,12 @@ body{
 .modal_svg{
     height: 18px;
     width: 18px;
-    fill: var(--black-color);
-    stroke: var(--black-color);
     position: absolute;
     margin-top: 27px;
     margin-left: 12px;
+}
+.modal_svg:hover,
+.modal_svg:focus{
+    fill: var(--aqua-color);
 }
 
