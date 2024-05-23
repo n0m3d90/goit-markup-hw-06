@@ -469,6 +469,9 @@ body{
     line-height: 1.19;
     font-weight: 700;
 }
+.footer .container{
+    display: flex;
+}
 .footer div{
     padding-right:94px ;
 }
@@ -586,7 +589,7 @@ body{
     display: flex;
     gap: 12px;
 }
-.footer_label input{
+.footer_label_input{
     width: 358px;
     height: 50px;
     border-radius: 4px 0px 0px 0px;
@@ -596,7 +599,8 @@ body{
     background-color:  rgba(47, 48, 58, 1);
     color: var(--white-color);
 }
-.footer_label input:hover{
+.footer_label_input:hover,
+.footer_label_input:focus{
     border-color:var(--aqua-color);
 }
 .footer_label svg{
@@ -605,7 +609,7 @@ body{
     margin-right: -15px;
     margin-top: 5px;
 }
-.footer_form button{
+.footer_form_button{
     width: 200px;
     height: 50px;
     font-size: 16px;
@@ -621,7 +625,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 12px;
-
+    cursor: pointer;
 }
 
 /*Portofolio page*/
@@ -921,6 +925,8 @@ body{
 .modal_svg:focus {
     fill: var(--aqua-color);
 }
+
+
 
 
 
